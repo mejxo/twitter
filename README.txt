@@ -6,7 +6,18 @@ composer create-project laravel/laravel {app-name} - Create laravel project
 php artisan key:generate - Generate keys
 php artisan serve - Server website
 
+{name} - in singular
 php artisan make:controller {name}Controller - Create controller
+php artisan make:view  {name} - Create view
+pjp artisan make:migration create_{name}_table
+php artisan migrate - Migrate database
+php artisan make:model {name} - Create model
+
+CRUD create read update delete
+
+all 
+orderby("column", "ASC"/"DESC")->get()
+Post::all
 
 
 ## Codes

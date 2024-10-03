@@ -3,17 +3,17 @@
 
 <head>
     {{-- Inluce head --}}
-    @include('layout.head')
+    @include('inc.head')
 </head>
 
 <body>
     {{-- Inluce nav --}}
-    @include('layout.nav')
+    @include('inc.nav')
     <div class="container py-4">
         {{-- Here is spawning view content --}}
         @yield('content')
     </div>
-    @include('layout.footer')
+    @include('inc.footer')
 </body>
 
 </html>
