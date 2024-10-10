@@ -19,6 +19,7 @@
 ## Database Commands
 `php artisan migrate` - Migrate database <br />
 `php artisan make:migration create_{name}_table` - Create table <br />
+`php artisan make:model User -m` - create model and table in database <br /> 
 
 ### **Creating Database** <br />
     Schema::create('posts', function (Blueprint $table) {

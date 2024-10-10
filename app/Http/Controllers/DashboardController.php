@@ -9,10 +9,10 @@ class DashboardController extends Controller
 {
     public function index() {
 
-        Post::create([
+        /*Post::create([
             'content' => 'Lorem ipsum',
             'likes' => 15,
-        ]);
+        ]);*/
 
         $users = [
             [
