@@ -10,7 +10,7 @@
                             </a></h5>
                     </div>
                 </div>
-                <div class="flex flex-col gap-32">
+                <div class="flex flex-col">
                     <div>
                         <form action="{{ route('post.destroy', $post->id) }}" method="post">
                             @method('delete')
@@ -18,7 +18,7 @@
                             <button type="submit">Delete</button>
                         </form>
                     </div>
-                    <div>
+                    <div class="mt-2">
                         <form action="{{ route('post.show', $post->id) }}" method="post">
                             @csrf
                             <button type="submit">Show</button>
