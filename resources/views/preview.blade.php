@@ -1,3 +1,5 @@
+@include('inc.head')
+
 <div class="mt-3">
     <div class="card">
         <div class="px-3 pt-4 pb-2">
@@ -10,7 +12,7 @@
                             </a></h5>
                     </div>
                 </div>
-                <div class="flex flex-col gap-32">
+                <div class="flex flex-col">
                     <div>
                         <form action="{{ route('post.destroy', $post->id) }}" method="post">
                             @method('delete')
@@ -20,12 +22,13 @@
                     </div>
                     <div>
                         <form action="{{ route('post.show', $post->id) }}" method="post">
+                            @method('post')
                             @csrf
                             <button type="submit">Show</button>
                         </form>
                     </div>
-                    </div>
                 </div>
+            </div>
         </div>
         <div class="card-body">
             <p class="fs-6 fw-light text-muted">
