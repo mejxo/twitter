@@ -35,12 +35,6 @@
                         @method('put')
                         <div class="mb-3">
                             <textarea class="form-control" id="content" name="content" rows="3">{{ $post->content }}</textarea>
-                            @error('content')
-                                <span style="color:red">{{ $message }}</span>
-                            @enderror
-                            @if( session()->has('success') )
-                                <span style="color:green">{{session()->get('success')}}</span>
-                            @endif
                         </div>
                         <div class="">
                             <button class="btn btn-dark btn-sm" type="submit">Update</button>
