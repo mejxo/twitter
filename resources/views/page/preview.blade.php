@@ -41,32 +41,8 @@
         </div>
     </div>
     <div class="col-6">
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            Idea created Successfully
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        <h4> Share yours ideas </h4>
-        <div class="row">
-            <form action="{{ route("post.store") }}" method="post">
-                @csrf
-                <div class="mb-3">
-                    <textarea class="form-control" id="content" name="content" rows="3"></textarea>
-                    @error('content')
-                        <span style="color:red">{{ $message }}</span>
-                    @enderror
-                    @if( session()->has('success') )
-                        <span style="color:green">{{session()->get('success')}}</span>
-                    @endif
-                </div>
-                <div class="">
-                    <button class="btn btn-dark" type="submit"> Share </button>
-                </div>
-            </form>
-        </div>
-        <hr>
-        @foreach ($posts as $post)
-            @include("inc.post-card")
-        @endforeach
+    <hr>
+    @include("inc.post-card")
     </div>
     <div class="col-3">
         <div class="card">

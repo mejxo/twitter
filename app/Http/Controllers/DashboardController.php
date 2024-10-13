@@ -28,8 +28,4 @@ class DashboardController extends Controller
         
         return view( 'dashboard', ["users" => $users, "name" => "Dashboard", "posts" => Post::orderby("likes", "ASC")->get(),] );
     }
-
-    public function show($id) {
-        return view( 'preview', ["name" => "Dashboard","post" => Post::where('id', $id)->first(),]);
-    }
 }
