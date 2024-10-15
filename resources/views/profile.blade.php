@@ -6,6 +6,6 @@
     <meta name="author" content="maxo">
 </head>
 <body>
-    Profile
+    Profile of Maxo
 </body>
 </html>
